@@ -1,0 +1,143 @@
+{
+    "users": [
+      {
+        "id": "14f1",
+        "fullName": "",
+        "email": "",
+        "phoneNumber": "",
+        "password": "",
+        "address": ""
+      },
+      {
+        "id": "c1f5",
+        "fullName": "",
+        "email": "",
+        "phoneNumber": "",
+        "password": "",
+        "address": ""
+      },
+      {
+        "id": "7764",
+        "fullName": "",
+        "email": "",
+        "phoneNumber": "",
+        "password": "",
+        "address": ""
+      },
+      {
+        "id": "8354",
+        "fullName": "",
+        "email": "",
+        "phoneNumber": "",
+        "password": "",
+        "address": ""
+      },
+      {
+        "id": "db3f",
+        "fullName": "Vincent Ekene Nwafor",
+        "email": "vincentwilliamsjohn9626@gmail.com",
+        "phoneNumber": "08137962688",
+        "password": "12345",
+        "address": "840 nasiru el rufia crescent,guzape"
+      },
+      {
+        "id": "cbfb",
+        "fullName": "",
+        "email": "",
+        "phoneNumber": "",
+        "password": "",
+        "address": ""
+      },
+      {
+        "id": "0245",
+        "fullName": "",
+        "email": "",
+        "phoneNumber": "",
+        "password": "",
+        "address": ""
+      },
+      {
+        "id": "8de8",
+        "fullName": "",
+        "email": "",
+        "phoneNumber": "",
+        "password": "",
+        "address": ""
+      },
+      {
+        "id": "6fb7",
+        "fullName": "",
+        "email": "",
+        "phoneNumber": "",
+        "password": "",
+        "address": ""
+      },
+      {
+        "id": "30fa",
+        "fullName": "Ekianadoese Collins Ozigbo",
+        "email": "ozigboc@gmail.com",
+        "phoneNumber": "08060143255",
+        "password": "Collins12",
+        "address": "LAGOS ISLAND ECKANKAR CENTRE."
+      }
+    ],
+    "employees": [
+      {
+        "id": "8b69",
+        "name": "",
+        "email": "",
+        "address": "",
+        "password": "",
+        "department": ""
+      }
+    ],
+    "staffs": [
+      {
+        "id": "ba67",
+        "name": "",
+        "email": "",
+        "address": "",
+        "password": "",
+        "department": ""
+      }
+    ],
+    "roles": [
+      {
+        "id": "9e8a",
+        "name": "Admin",
+        "description": "Boss"
+      }
+    ],
+    "skills": [
+      {
+        "id": "111a",
+        "skillId": "1002",
+        "skillName": "Frontend Developer"
+      }
+    ],
+    "departments": [
+      {
+        "id": "b430",
+        "departmentId": "100",
+        "departmentName": "IT support"
+      }
+    ],
+    "projects": [
+      {
+        "id": "613d",
+        "projectName": "Paying App",
+        "deadline": "2024/04/23",
+        "description": "React-n",
+        "duration": "2 month",
+        "department": "men"
+      },
+      {
+        "id": "b5db",
+        "projectName": "Paying App",
+        "deadline": "2024/04/23",
+        "description": "React-n",
+        "duration": "2 month",
+        "department": "women"
+      }
+    ]
+  }
