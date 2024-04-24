@@ -1,7 +1,7 @@
 import React from 'react';
 import store1 from '../Assets/store1.webp';
 import store2 from '../Assets/store2.jpeg';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 const StoreCard = () => {
   return (

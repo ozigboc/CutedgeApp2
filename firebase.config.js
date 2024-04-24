@@ -1,3 +1,4 @@
+
 const firebaseConfig = {
     apiKey: "AIzaSyCWppfS5Dh01-nkR7eEfwr4QyVyB1dGPRs",
     authDomain: "foodapp-23.firebaseapp.com",

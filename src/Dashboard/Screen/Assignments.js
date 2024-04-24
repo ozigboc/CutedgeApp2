@@ -4,7 +4,7 @@ import Modal from "react-modal";
 import Header2 from '../Components/Header2';
 import axios from 'axios';
 
-const Roles = () => {
+const Assignments = () => {
     const [assignments, setAssignments] = useState([]);
     const [formData, setFormData] = useState({
         name: '',
@@ -12,7 +12,7 @@ const Roles = () => {
     });
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isModalOpen1, setIsModalOpen1] = useState(false);
-    const [selectedRole, setSelectedROles] = useState(null);
+    const [selectedAssignments, setSelectedAssignments] = useState(null);
 
     useEffect(() => {
         axios.get('http://localhost:3003/assignments')
@@ -25,7 +25,7 @@ const Roles = () => {
     };
 
     const toggleModal1 = (project) => {
-        setSelectedROles(project);
+        setSelectedAssignments(project);
         setIsModalOpen1(!isModalOpen1);
     };
 
