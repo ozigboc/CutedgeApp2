@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState,useEffect } from 'react';
 import Sidebar from '../Components/Sidebar';
 import Modal from "react-modal";
 import Header2 from '../Components/Header2';
 import axios from 'axios';
 
-const Departments = () => {
-     const [departments, setDepartments] = useState([]);
+const Roles = () => {
+    const [assignments, setAssignments] = useState([]);
     const [formData, setFormData] = useState({
-        departmentId: '',
-        departmentName: '',
+        name: '',
+        description: ''
     });
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isModalOpen1, setIsModalOpen1] = useState(false);
-    const [selectedDepartment, setSelectedDepartment] = useState(null);
+    const [selectedRole, setSelectedROles] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3003/departments')
-            .then(response => setDepartments(response.data))
-            .catch(error => console.error('Error fetching departments:', error));
+        axios.get('http://localhost:3003/assignments')
+            .then(response => setAssignments(response.data))
+            .catch(error => console.error('Error fetching roles:', error));
     }, []);
 
     const toggleModal = () => {
@@ -25,7 +25,7 @@ const Departments = () => {
     };
 
     const toggleModal1 = (project) => {
-        setSelectedDepartment(project);
+        setSelectedROles(project);
         setIsModalOpen1(!isModalOpen1);
     };
 
@@ -39,12 +39,12 @@ const Departments = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3003/departments', formData)
+        axios.post('http://localhost:3003/roles', formData)
             .then(response => {
-                setDepartments([...departments, response.data]);
+                setAssignments([...assignments, response.data]);
                 setFormData({
-                    departmentId: '',
-                    departmentName: '',
+                    name: '',
+                    description: '',
                 });
                 toggleModal();
             })
@@ -58,23 +58,24 @@ const Departments = () => {
                 <main>
                     <Header2 />
                     <div className='add'>
-                        <h2>departments</h2>
-                        <button onClick={toggleModal}>Add Department</button>
+                        <h2>assignments</h2>
+                        <button onClick={toggleModal}>Add Assignments</button>
                     </div>
 
                     <table>
                         {/* <thead className='heading'> */}
                             <tr className='heading'>
-                                <th>DepartmentId</th>
-                                <th>DepartmentName</th>
+                                <th>Name</th>
+                                <th>Duration</th>
                                 <th className='dt'></th>
                             </tr>
                         {/* </thead> */}
                         {/* <tbody> */}
-                            {departments.map((item, index) => (
+                            {assignments.map((item, index) => (
                                 <tr key={index}>
-                                    <td>{item.departmentId}</td>
-                                    <td>{item.departmentName}</td>
+                                    <td>{item.name}</td>
+                                    <td>{item.description}</td>
+
                                     <td className='dt'><button onClick={() => toggleModal1(item)}>See Details</button></td>
                                 </tr>
                             ))}
@@ -108,24 +109,24 @@ const Departments = () => {
                         </div>
                         <form className='product-form' onSubmit={handleSubmit}>
                             <div>
-                                <p>Department Id</p>
+                                <p>Name</p>
                                 <input
                                     type="text"
-                                    name="departmentId"
-                                    value={formData.departmentId}
-                                    onChange={handleChange}
-                                />
-                            </div>
-                            <div>
-                                <p>Department Name</p>
-                                <input
-                                    type="text"
-                                    name="departmentName"
-                                    value={formData.departmentName}
+                                    name="name"
+                                    value={formData.name}
                                     onChange={handleChange}
                                 />
                             </div>
                            
+                            <div>
+                                <p>Description</p>
+                                <input
+                                       type="text"
+                                       name="description"
+                                       value={formData.description}
+                                       onChange={handleChange}
+                                />
+                            </div>
                             <div>
                                 <button type="submit">SEND</button>
                             </div>
@@ -157,12 +158,12 @@ const Departments = () => {
                         <div className='close'>
                             <button onClick={() => setIsModalOpen1(false)} style={{ cursor: 'pointer' }}>X</button>
                         </div>
-                        {selectedDepartment && (
+                        {selectedAssignments && (
                             <section className='roject-info'>
                             
                                 <div className='others'>
-                                    <p>Department ID: <span>{selectedDepartment.departmentId}</span></p>
-                                    <p>Department Name: <span>{selectedDepartment.departmentName}</span></p>
+                                    <p>Name: <span>{selectedAssignments.name}</span></p>
+                                    <p>Description: <span>{selectedAssignments.description}</span></p>
                                     {/* Render other product details here */}
                                 </div>
                             </section>
@@ -174,5 +175,4 @@ const Departments = () => {
     );
 };
 
-
-export default Departments;
+export default Assignments;
