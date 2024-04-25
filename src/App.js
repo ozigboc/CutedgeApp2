@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './Screens/Home';
 import Contact from './Screens/Contact';
+import Map from './Screens/Map';
 import DashboardHomepage from './Dashboard/Screen/DashboardHomepage';
 import Employees from './Dashboard/Screen/Employees';
 import Projects from './Dashboard/Screen/Projects';
@@ -24,6 +25,7 @@ function App() {
 
       <Route path="/" element={<Home/>} />
       <Route path="/contact" element={<Contact/>} />
+      <Route path="/map" element={<Map/>} />
       <Route path="/dashboard" element={<DashboardHomepage/>} />
       <Route path="/employees" element={<Employees/>} />
       <Route path="/departments" element={<Departments/>} />
@@ -34,13 +36,24 @@ function App() {
       <Route path="/login" element={<Login/>} />
       <Route path="/signup" element={<Signup/>} />
 
+
     </Routes>
     </Router>
+
+    <div className="App">
+      <h1>TechHub Google Maps</h1>
+      <Map />
+    </div>
       
     </div>
+
+      
   );
 }
 
 export default App;
+
+
+
 
 
