@@ -50,7 +50,7 @@ const Contact = () => {
           <div>
             <MdEmail className='c-icons'/>
             <h3>Email</h3>
-            <a href="mailto:">allied@gmail.com</a>
+            <a href="mailto:">techhub@gmail.com</a>
           </div>
 
         </div>

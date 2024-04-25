@@ -57,9 +57,7 @@ const Sidebar = () => {
         {/* <FaBars className='icon' onClick={toggle} style={{cursor:'pointer'}}/> */}
       
       </div>
-
-     
-        
+ 
 
       <NavLink to='/' className='link' activeclassName = 'active'>
       
@@ -114,47 +112,23 @@ const Sidebar = () => {
       
       </NavLink>
 
-      <NavLink to='/departments' className='link' activeclassName = 'active'>
+      <NavLink to='/skills' className='link' activeclassName = 'active'>
+      
+        <div>
+          <TbBooks  className='icon'/>
+          <h4 style={{display:isOpen ? "none" : "block"}}>Skills</h4>
+        </div>
+      
+      </NavLink>
+
+    <NavLink to='/departments' className='link' activeclassName = 'active'>
         <div>
           <TbBooks  className='icon'/>
           <h4 style={{display:isOpen ? "none" : "block"}}>Departments</h4>
         </div>
       </NavLink>
 
-      <NavLink to='/roles' className='link' activeclassName = 'active'>
-      
-        <div>
-        
-          <TbBooks  className='icon'/>
-          <h4 style={{display:isOpen ? "none" : "block"}}>Roles</h4>
 
-        </div>
-      
-      </NavLink>
-
-      <NavLink to='/staffs' className='link' activeclassName = 'active'>
-      
-        <div>
-        
-          <TbBooks  className='icon'/>
-          <h4 style={{display:isOpen ? "none" : "block"}}>Staffs</h4>
-
-        </div>
-      
-      </NavLink>
-
-      <NavLink to='/skills' className='link' activeclassName = 'active'>
-      
-        <div>
-        
-          <TbBooks  className='icon'/>
-          <h4 style={{display:isOpen ? "none" : "block"}}>Skills</h4>
-
-        </div>
-      
-      </NavLink>
-
-    
       <NavLink to='/settings' className='link' activeclassName = 'active'>
       
             <div>
@@ -168,20 +142,6 @@ const Sidebar = () => {
      
       
       </div>
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
 
       <div className={`side2 ${open1 ? ' active' : 'inactive'}`}>
 
