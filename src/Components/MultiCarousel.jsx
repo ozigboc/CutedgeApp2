@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import {BsTicketPerforated} from 'react-icons/bs';
-import { Literature, MultiCards, Fantasy, Science } from '../utils/Data';
+import { Teamwork, MultiCards, Fantasy, Science } from '../utils/Data';
 import { Link } from 'react-router-dom';
 import Modal from "react-modal";
 import DisplayDataByCategory from '../Dashboard/Components/DisplayDataByCategory';
@@ -48,7 +48,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
     const [list4, setList4] = useState(false)
 
 
-    function fiction(){
+    function Brand(){
         setList1(true)
         setList2(false)
         setList3(false)
@@ -69,7 +69,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
         setList4(false)
     }
 
-    function literature(){
+    function Teamwork(){
       setList3(false)
       setList2(false)
       setList1(false)
@@ -107,14 +107,14 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 
 
       <div className='pricing'>
-        <h2>Best Sellers</h2>
+        <h2>Who We Are ...</h2>
 
 
         <div className='price-plan'>
-            <span onClick={fiction} className={` ${list1 ? 'actives' : 'inactive'}`}>Fiction</span>
+            <span onClick={Brand} className={` ${list1 ? 'actives' : 'inactive'}`}>Brand</span>
             <span onClick={fantasy} className={` ${list2 ? 'actives' : 'inactive'}`}>Fantasy</span>
             <span onClick={science} className={` ${list3 ? 'actives' : 'inactive'}`}>Science</span>
-            <span onClick={literature} className={` ${list4 ? 'actives' : 'inactive'}`}>Literature</span>
+            <span onClick={Teamwork} className={` ${list4 ? 'actives' : 'inactive'}`}>Teamwork</span>
         </div>
 
         
@@ -127,12 +127,6 @@ const [isModalOpen, setIsModalOpen] = useState(false);
           <div key={index} className='item'>
             <img src={item.image} alt="" />
             <h2>{item.name}</h2>
-
-            <div className='get'>
-                <p>{item.price}</p>
-                <Link to='/ticket'><button>Add To Cart</button></Link>
-
-              </div>
             
             {/* Display image here if needed */}
           </div>
@@ -154,12 +148,6 @@ const [isModalOpen, setIsModalOpen] = useState(false);
                   <BsTicketPerforated className='icon'/>
                   <span>{item.ticket}</span>
                 </div> */}
-
-                <div className='get'>
-                  <p>{item.price}</p>
-                  <Link to='/ticket'><button>Add To Cart</button></Link>
-
-                </div>
                 
               </div>
               ))
@@ -182,11 +170,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
                   <span>{item.ticket}</span>
                 </div> */}
 
-                <div className='get'>
-                  <p>{item.price}</p>
-                  <Link to='/ticket'><button>Add To Cart</button></Link>
-
-                </div>
+                
                 
               </div>
               ))
@@ -208,12 +192,6 @@ const [isModalOpen, setIsModalOpen] = useState(false);
                   <BsTicketPerforated className='icon'/>
                   <span>{item.ticket}</span>
                 </div> */}
-
-                <div className='get'>
-                  <p>{item.price}</p>
-                  <Link to='/ticket'><button>Add to Cart</button></Link>
-
-                </div>
                 
               </div>
               ))
@@ -228,7 +206,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 
           <Carousel responsive={responsive}>
           {
-            Literature && Literature.map(item =>(
+            Teamwork && Teamwork.map(item =>(
               <div key={item.id} className='item'>
                 <img src={item.img} alt="" />
                 <h2>{item.text}</h2>
@@ -237,11 +215,6 @@ const [isModalOpen, setIsModalOpen] = useState(false);
                   <span>{item.ticket}</span>
                 </div> */}
 
-                <div className='get'>
-                  <p>{item.price}</p>
-                  <Link to='/ticket'><button>Add To Cart</button></Link>
-
-                </div>
                 
               </div>
               ))

@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <div>
         <div className='hero'>
-            <h2>Discover The Technology that Works </h2>
-            <button>WORK WITH US</button>
+            <h2>Empowering Innovation, Transforming Tomorrow.  </h2>
+            <button>DISCOVER LIMITLESS POSSIBILITIES</button>
         </div>
     </div>
   )

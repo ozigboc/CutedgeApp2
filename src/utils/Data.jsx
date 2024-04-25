@@ -38,7 +38,7 @@ export const CategoryCards= [
 
     {
         id:1,
-        text:'Fiction',
+        text:'Brand',
         background:travel
     },
 
@@ -57,7 +57,7 @@ export const CategoryCards= [
 
     {
       id:4,
-      text:'Literature',
+      text:'Teamwork',
       background:cinema
 
     }
@@ -69,41 +69,36 @@ export const MultiCards= [
   {
       id:1,
       img:f1,
-      text:'Tree House',
-      ticket:'VIP',
-      price:'₦ 20,000',
+      text:'Conference Hall',
+     
   },
 
   {
     id:2,
     img:f2,
-    text:'The Great Gatsby',
-    ticket:'Shirt',
-    price:'₦ 4,000',
+    text:'Wining Team',
+    
 },
 
 {
   id:3,
   img:f3,
-  text:'Calculating Stars',
-  ticket:'Gold',
-  price:'₦ 5,000',
+  text:'Meeting room',
+ 
 },
 
 {
   id:4,
   img:f4,
-  text:'The Vines',
-  ticket:'Corporate Rental (6Hours)',
-  price:'₦ 15,000',
+  text:'The Engine Hub',
+ 
 },
 
 {
   id:5,
   img: f5,
-  text:"An Orphan's war",
-  ticket:'VIP',
-  price:'₦ 8,500',
+  text:"Brainstorming",
+ 
 },
  
   
@@ -115,41 +110,36 @@ export const Fantasy= [
   {
       id:1,
       img:fa1,
-      text:'Throne of Glass',
-      ticket:'VIP',
-      price:'₦ 20,000',
+      text:'Stakeholders',
+     
   },
 
   {
     id:2,
     img:fa2,
-    text:'Wheel of Time',
-    ticket:'Shirt',
-    price:'₦ 4,000',
+    text:'Big Tech',
+    
 },
 
 {
   id:3,
   img:fa3,
-  text:"Howl's Moving",
-  ticket:'Gold',
-  price:'₦ 5,000',
+  text:"Smart goal ...",
+  
 },
 
 {
   id:4,
   img:fa4,
-  text:'Two piece',
-  ticket:'Sword in the Stone',
-  price:'₦ 15,000',
+  text:'Getting started .... ',
+  
 },
 
 {
   id:5,
   img:fa5,
-  text:'Shadow and Bone',
-  ticket:'VIP',
-  price:'₦ 8,500',
+  text:'WE care',
+  
 }
 ];
 
@@ -158,86 +148,74 @@ export const Science= [
   {
       id:1,
       img:s1,
-      text:'Science  book',
-      ticket:'VIP',
-      price:'₦ 20,000',
+      text:'Strong Together',
+     
   },
 
   {
     id:2,
     img:s2,
     text:'Infinite Power',
-    ticket:'Shirt',
-    price:'₦ 4,000',
+  
 },
 
 {
   id:3,
   img:s3,
-  text:'History of Time',
-  ticket:'Gold',
-  price:'₦ 5,000',
+  text:'Breath',
 },
 
 {
   id:4,
   img:s4,
   text:'Compass of Pleasure',
-  ticket:'Corporate Rental (6Hours)',
-  price:'₦ 15,000',
+  
 },
 
 {
   id:5,
   img:s5,
-  text:'Breath',
-  ticket:'VIP',
-  price:'₦ 8,500',
+  text:'History of Time',
 }  
   
 ];
 
 
-export const Literature= [
+export const Teamwork= [
 
   {
       id:1,
       img:k1,
       text:"Children's Love",
-      ticket:'VIP',
-      price:'₦ 20,000',
+      
   },
 
   {
     id:2,
     img:k2,
     text:'Of Mice and men',
-    ticket:'Shirt',
-    price:'₦ 4,000',
+   
 },
 
 {
   id:3,
   img:k3,
   text:'Old man and the sea',
-  ticket:'Gold',
-  price:'₦ 5,000',
+  
 },
 
 {
   id:4,
   img:k4,
   text:'Shirt',
-  ticket:'Heart of Darkness',
-  price:'₦ 15,000',
+ 
 },
 
 {
   id:5,
   img:k5,
   text:'Hole in the Day',
-  ticket:'VIP',
-  price:'₦ 8,500',
+  
 } 
   
 ];

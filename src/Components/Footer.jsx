@@ -14,7 +14,7 @@ const Footer = () => {
                 <div>
                     <p className='link'>About</p>
                     <p className='link'>Support</p>
-                    <p className='link'>Faq</p>
+                    <p className='link'>FQA</p>
                     <p className='link'>Blog</p>
                 </div>
                 <div className='f-icons'>
@@ -28,7 +28,7 @@ const Footer = () => {
 
             <div className="foot1 foot2">
                 <div>
-                    <p>Copyrights © 2023 Deelaa</p>
+                    <p>Copyrights © 2024 TechHub</p>
                 </div>
                 <div className='priv'>
                     <span className='span'>Privacy</span>

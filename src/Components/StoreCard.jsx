@@ -8,22 +8,22 @@ const StoreCard = () => {
     <div className='storeCards'>
 
         <div className="store">
-            <h2>Find Nice Books, Anywhere, Anytime</h2>
-            <p>Bring the market place to your place no need to step out to sell your items or buy new items do it on the go</p>
+            <h2>Tech Beyond Boundaries.</h2>
+            <p>Welcome to TechHub Ltd, where cutting-edge technology meets limitless possibilities. Explore our world of innovation, where every line of code paves the way for groundbreaking solutions. Join us on a journey to redefine the future, one pixel at a time</p>
 
         </div>
 
         <div className="store1">
             <img src={store1} alt="" />
-            <p>PH Branch</p>
-            <a href='#shop'><button>Shop</button></a>
+            <p>Nigeria Office</p>
+           
             
         </div>
 
         <div className="store1">
             <img src={store2} alt="" />
-            <p>Lagos Branch</p>
-            <a href='#shop'><button>Shop</button></a>
+            <p>Uk Office</p>
+           
             
         </div>
         
