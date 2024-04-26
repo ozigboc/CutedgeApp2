@@ -14,7 +14,6 @@ const DisplayDataByCategory = ({ category }) => {
                 
               <div>Name: {item.name}</div>
               <div>Price: {item.price}</div>
-              {/* Display image here if needed */}
             </li>
           ))}
         </ul>

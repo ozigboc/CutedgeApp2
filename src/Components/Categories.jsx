@@ -6,9 +6,6 @@ import { CategoryCards } from '../utils/Data';
 
 const Categories = () => {
 
-  
-
-
   return (
     <div className='categories'>
       <div className='search'>
@@ -25,7 +22,6 @@ const Categories = () => {
           CategoryCards && CategoryCards.map(item =>(
           <div key={item.id}  className='card' style={{ backgroundImage: `url(${item.background})` }}>
             {item.icon}
-            {/* <div className="dk"></div> */}
             <p>{item.text}</p>
             <div className="dk"></div>
 

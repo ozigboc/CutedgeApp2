@@ -10,81 +10,40 @@ const DashboardHomepage = () => {
 
   const Cards = [
 
-    // {
-    //   text: 'Books',
-    //   icon: TbBooks,
-    //   link: '/products'
-    //   // background:'#6861ce'
-    // },
     {
       text: 'Employees',
       icon: TbBooks,
       link: '/employees'
-      // background:'#6861ce'
+    
     },
     {
       text: 'Departments',
       icon: TbBooks,
       link: '/departments'
-      // background:'#6861ce'
+    
     },
     {
       text: 'Projects',
       icon: TbBooks,
       link: '/projects'
-      // background:'#6861ce'
+      
     },
     {
       text: 'Roles',
       icon: TbBooks,
       link: '/roles'
-      // background:'#6861ce'
+     
     },
-    {
-      text: 'Staffs',
-      icon: TbBooks,
-      link: '/staffs'
-      // background:'#6861ce'
-    },
+    
     {
       text: 'Skills',
       icon: TbBooks,
       link: '/skills'
-      // background:'#6861ce'
+      
     },
 
 
-
-    // {
-    //   text:'Shops',
-    //   icon:GrShop,
-    //   link:'/shops'
-    //   // background:'#31ce36'
-    // },
-    // {
-    //   text:'Shop Manager',
-    //   icon:GrShop,
-    //   link:'/manager'
-    //   // background:'#31ce36'
-    // },
-
-    // {
-    //   text:'Bank',
-    //   icon:RiBankFill,
-    //   link:'/bank'
-    //   // background:'#6861ce'
-
-    // },
-
-
-
-    {
-      text: 'Settings',
-      icon: IoIosSettings,
-      link: '/settings'
-      // background:'#f25961'
-
-    }
+   
 
   ];
 
@@ -102,10 +61,7 @@ const DashboardHomepage = () => {
 
           <section className='left'>
 
-            {/* <div className='search'>
-                <img src={s} alt="" />
-                <input type="search" placeholder='Search' />
-              </div> */}
+            
 
             <div className='cards-container'>
 

@@ -15,7 +15,7 @@ const MultiCarousel = ({category}) => {
 
   const responsive = {
   superLargeDesktop: {
-    // the naming can be any, depends on you.
+   
     breakpoint: { max: 4000, min: 3000 },
     items: 5
   },
@@ -55,7 +55,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
         setList4(false)
     }
 
-    function fantasy(){
+    function Portfolio(){
         setList2(true)
         setList3(false)
         setList1(false)
@@ -79,32 +79,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className='multi' id='shop'>
 
-      {/* <h1>Popular Tickets  <span> Explore More  </span> </h1> */}
       
-      {/* <Carousel responsive={responsive}>
-        {
-          MultiCards && MultiCards.map(item =>(
-            <div key={item.id} className='item'>
-              <img src={item.img} alt="" />
-              <p className='access'>Access Ticket</p>
-              <h2>{item.text}</h2>
-              <div className='ticket'>
-                <BsTicketPerforated className='icon'/>
-                <span>{item.ticket}</span>
-              </div>
-
-              <div className='get'>
-                <p>{item.price}</p>
-                <Link to='/ticket'><button>Get Ticket</button></Link>
-
-              </div>
-              
-            </div>
-            ))
-        }
-        
-      </Carousel> */}
-
 
       <div className='pricing'>
         <h2>Who We Are ...</h2>
@@ -112,7 +87,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
 
         <div className='price-plan'>
             <span onClick={Brand} className={` ${list1 ? 'actives' : 'inactive'}`}>Brand</span>
-            <span onClick={fantasy} className={` ${list2 ? 'actives' : 'inactive'}`}>Fantasy</span>
+            <span onClick={Portfolio} className={` ${list2 ? 'actives' : 'inactive'}`}>Portfolio</span>
             <span onClick={science} className={` ${list3 ? 'actives' : 'inactive'}`}>Science</span>
             <span onClick={Teamwork} className={` ${list4 ? 'actives' : 'inactive'}`}>Teamwork</span>
         </div>
@@ -128,7 +103,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
             <img src={item.image} alt="" />
             <h2>{item.name}</h2>
             
-            {/* Display image here if needed */}
+
           </div>
         ))}
      
@@ -144,10 +119,6 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               <div key={item.id} className='item'>
                 <img src={item.img} alt="" />
                 <h2>{item.text}</h2>
-                {/* <div className='ticket'>
-                  <BsTicketPerforated className='icon'/>
-                  <span>{item.ticket}</span>
-                </div> */}
                 
               </div>
               ))
@@ -165,10 +136,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               <div key={item.id} className='item'>
                 <img src={item.img} alt="" />
                 <h2>{item.text}</h2>
-                {/* <div className='ticket'>
-                  <BsTicketPerforated className='icon'/>
-                  <span>{item.ticket}</span>
-                </div> */}
+                
 
                 
                 
@@ -188,10 +156,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               <div key={item.id} className='item'>
                 <img src={item.img} alt="" />
                 <h2>{item.text}</h2>
-                {/* <div className='ticket'>
-                  <BsTicketPerforated className='icon'/>
-                  <span>{item.ticket}</span>
-                </div> */}
+                
                 
               </div>
               ))
@@ -210,10 +175,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
               <div key={item.id} className='item'>
                 <img src={item.img} alt="" />
                 <h2>{item.text}</h2>
-                {/* <div className='ticket'>
-                  <BsTicketPerforated className='icon'/>
-                  <span>{item.ticket}</span>
-                </div> */}
+                
 
                 
               </div>
@@ -223,7 +185,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
           </Carousel>
         ) : null}
 
-        {/* <DisplayDataByCategory category="men" /> */}
+       
 
       </div>
 

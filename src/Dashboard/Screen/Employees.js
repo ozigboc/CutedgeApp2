@@ -109,37 +109,7 @@ const Employees = () => {
                 </main>
             </section>
 
-            {/* <section className='dashboard'>
-                <Sidebar />
-                <main>
-                    <Header2 />
-                    <div className='add'>
-                        <h2>employees</h2>
-                        <button onClick={toggleModal}>Add Staff</button>
-                    </div>
-
-                    <table>
-                        <thead className='heading'>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Department</th>
-                                <th className='dt'></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {employees.map((item, index) => (
-                                <tr key={index}>
-                                    <td>{item.name}</td>
-                                    <td>{item.email}</td>
-                                    <td>{item.department}</td>
-                                    <td className='dt'><button onClick={() => toggleModal1(item)}>See Details</button></td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
-                </main>
-            </section> */}
+           
 
           {/* FIRST MODAL */}
             <Modal

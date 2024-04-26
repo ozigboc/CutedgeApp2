@@ -8,7 +8,7 @@ const Header2 = () => {
     <div className='header2'>
 
     <div>
-      {/* <FaCircleUser className='icon'/> */}
+      
       <img src={note} alt="" className='note'/>
       <img src={dp} alt="" />
     </div>

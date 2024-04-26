@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import img from "../Assets/9 Gifts Every Book Nerd Wants Their Boyfriend To Get Them In Lieu Of Flowers This Valentine's Day.jpeg"
 import Header from '../Components/Header';
-// import axios from 'axios';
-// import baseURL from '../baseUrl';
-// import usersData from '../tempdatabase.json'
+
 
 const Login = () => {
     const navigate = useNavigate();

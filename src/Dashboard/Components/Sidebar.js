@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-// import '../App.css';
 import {AiFillHome } from "react-icons/ai";
-// import {FaCubes } from "react-icons/fa";
 import { FaCubes } from "react-icons/fa6";
 import { NavLink } from 'react-router-dom';
 import { FaBars } from "react-icons/fa";
@@ -17,7 +15,7 @@ const Sidebar = () => {
 
 
 
-  // const [open] = useState(false);
+ 
 
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen (!isOpen);
@@ -27,7 +25,7 @@ const Sidebar = () => {
   const handleClick = () => {
     setOpen1(!open1);
     setDropdownOpen(!isDropdownOpen);
-    document.body.style.overflow = open1 ? 'auto' : 'hidden'; // Disable or enable scrolling
+    document.body.style.overflow = open1 ? 'auto' : 'hidden'; 
   
 
   }
@@ -39,7 +37,7 @@ const Sidebar = () => {
       
     
       
-      {/* <FaBars className='media-bar'  onClick={() =>{setOpen1(!open1)}} style={{cursor:'pointer'}}/> */}
+      
       <div className='media-bar' onClick={handleClick}>
           {open1 ? (<IoCloseSharp id='close' style={{color:'#fff'}}/>) : (<FaBars id='bar'  style={{color:'#ee2a7b'}}/>)}
         </div>
@@ -54,19 +52,14 @@ const Sidebar = () => {
             <h1 onClick={toggle} style={{cursor:'pointer'}}>TechHub</h1>
         </div>
         
-        {/* <FaBars className='icon' onClick={toggle} style={{cursor:'pointer'}}/> */}
+     
       
       </div>
  
 
       <NavLink to='/' className='link' activeclassName = 'active'>
       
-      {/* <div >
-      
-        <FaBars className='icon'/>
-        <h4 style={{display:isOpen ? "none" : "block"}}>Dashboard</h4>
-
-      </div> */}
+     
     
     </NavLink>
 
@@ -81,16 +74,7 @@ const Sidebar = () => {
       
       </NavLink>
 
-      {/* <NavLink to='/products' className='link' activeclassName = 'active'>
       
-        <div>
-        
-          <TbBooks  className='icon'/>
-          <h4 style={{display:isOpen ? "none" : "block"}}>Books</h4>
-
-        </div>
-      
-      </NavLink> */}
 
       <NavLink to='/projects' className='link' activeclassName = 'active'>
       
@@ -129,12 +113,12 @@ const Sidebar = () => {
       </NavLink>
 
 
-      <NavLink to='/settings' className='link' activeclassName = 'active'>
+      <NavLink to='/' className='link' activeclassName = 'active'>
       
             <div>
             
                 <IoIosSettings className='icon'/>
-                <h4 style={{display:isOpen ? "none" : "block"}}>Settings</h4>
+                <h4 style={{display:isOpen ? "none" : "block"}}>Logout</h4>
 
             </div>
         
@@ -151,23 +135,7 @@ const Sidebar = () => {
       
       </div>
 
-      
-      
-
-      
-        
-
-        
-      {/* <NavLink to='/' lassName='link' activeclassName = 'active'>
-      
-        <div >
-        
-        <FaBars className='icon'/>
-        <h4 style={{display:isOpen ? "none" : "block"}}>Dashboard</h4>
-
-      </div>
-      
-      </NavLink> */}
+    
 
 
       <NavLink to='/dashboard' className='link' activeclassName = 'active'>

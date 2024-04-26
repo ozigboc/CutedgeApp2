@@ -44,7 +44,7 @@ export const CategoryCards= [
 
     {
       id:2,
-      text:'Fantasy',
+      text:'Portfolio',
       background:park
     },
       
