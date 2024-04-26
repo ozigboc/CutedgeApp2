@@ -1,6 +1,16 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GitHub Link
+# https://github.com/ozigboc/CutedgeApp2
+
+# REQUIRED NODE DEPEDENCIES:
+1. npm install @react-google-maps/api
+2. npm install json-server
+3. npm install
+4. json-server --watch db.json --port 3003
+
+
+
+# Getting Started with Create React App
 
 ## Available Scripts
 
