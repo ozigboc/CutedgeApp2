@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { FaShoppingCart } from "react-icons/fa";
+// import { FaShoppingCart } from "react-icons/fa";
 
 
 
@@ -10,7 +10,7 @@ import { FaShoppingCart } from "react-icons/fa";
 const Header = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  const [activeNav, setActiveNav] = useState('/')
+  // const [activeNav, setActiveNav] = useState('/')
 
   
   return (
@@ -27,9 +27,9 @@ const Header = () => {
         <ul  className={click ? 'menu active' : 'menu'}>
 
           
-            <NavLink to="/events" className='tab'  activeclassName = 'active'><li><FaShoppingCart /></li></NavLink>
+           {/* <NavLink to="/events" className='tab'  activeclassName = 'active'><li><FaShoppingCart /></li></NavLink> */}
 
-            <NavLink to="/contact" className='tab btn'  ><li>Contact</li></NavLink>   
+            {/* <NavLink to="/contact" className='tab btn'  ><li>Contact</li></NavLink>    */}
             <NavLink to="/login" className='tab btn btn1'><li>Login</li></NavLink>   
 
         </ul>

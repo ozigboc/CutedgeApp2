@@ -83,7 +83,7 @@ export const MultiCards= [
 {
   id:3,
   img:f3,
-  text:'Meeting room',
+  text:'Board room',
  
 },
 

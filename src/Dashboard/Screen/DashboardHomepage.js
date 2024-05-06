@@ -2,9 +2,9 @@ import React from 'react';
 // import '../App.css';
 import Sidebar from '../Components/Sidebar';
 import { TbBooks } from "react-icons/tb";
-import { IoIosSettings } from "react-icons/io";
+// import { IoIosSettings } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import Header2 from '../Components/Header2';
+// import Header2 from '../Components/Header2';
 
 const DashboardHomepage = () => {
 
@@ -57,7 +57,7 @@ const DashboardHomepage = () => {
         <Sidebar />
 
         <main>
-          <Header2 />
+          {/* <Header2 /> */}
 
           <section className='left'>
 

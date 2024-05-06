@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import Categories from '../Components/Categories';
+
 import MultiCarousel from '../Components/MultiCarousel';
 
 import StoreCard from '../Components/StoreCard';
@@ -19,7 +19,7 @@ const Home = () => {
           <Header/>
           {/* <Slider/> */}
           <Hero/>
-          <Categories/>
+          {/* <Categories/> */}
           <MultiCarousel/>
           {/* <MovieCarousel/> */}
           {/* <ParnerBg/> */}

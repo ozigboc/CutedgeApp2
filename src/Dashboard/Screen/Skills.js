@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Sidebar from '../Components/Sidebar';
 import Modal from "react-modal";
-import Header2 from '../Components/Header2';
+
 import axios from 'axios';
 
 
@@ -58,7 +58,7 @@ const Skills = () => {
          <section className='dashboard'>
              <Sidebar />
              <main>
-                 <Header2 />
+               
                  <div className='add'>
                      <h2>skills</h2>
                      <button onClick={toggleModal}>Add Skill</button>
